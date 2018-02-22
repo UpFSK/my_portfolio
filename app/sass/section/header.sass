@@ -1,0 +1,44 @@
+.header
+    width: 100%
+    height: 120px
+    background: url(../img/border_header_and_footer.png) no-repeat center 118px, $bg_header_footer
+    @extend %clearfix
+    padding-top: 35px
+    margin-bottom: 40px
+
+
+.header__logo
+    float: left
+
+.header__social 
+    float: right
+
+.social__list
+    font-size: 0  
+
+.social__item
+    display: inline-block
+    vertical-align: top
+
+    margin-left: 24px
+
+    &:first-child
+        margin-left: 0
+
+    .social__link 
+        display: block
+        width: 47px
+        height: 47px
+        background: url(../img/sprite/social_sprite.png)
+        
+        &_vk
+            background-position: -10px -77px
+
+            &:hover 
+                background-position: -76px -77px
+
+        &_git
+            background-position: -10px -10px
+
+            &:hover 
+                background-position: -77px -10px
