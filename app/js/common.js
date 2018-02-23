@@ -1,5 +1,16 @@
-$(function() {
+let myModule = (function() {
+	let init = () => {
+		_setUpListnrts()
+	}
 
-	// Custom JS
+	let _setUpListnrts = () => {
+		//Прослушка событий
+	}
 
-});
+	return {
+		init: init
+	}
+
+})()
+
+myModule.init();
