@@ -1,0 +1,149 @@
+.container-min
+    width: 960px + 20px
+    padding: 0px 10px
+    margin: 0 auto;
+    
+.main 
+    float: right
+    width: 650px
+
+.main__block
+    background: $bg_header_footer
+    border-radius: 5px
+    overflow: hidden
+    padding-bottom: 45px
+    margin-bottom: 25px
+
+.my-about
+    background: $bg_header_footer
+
+.title 
+    font-size: 27px
+    line-height: 20px
+    color: $main_color
+
+    &__text
+        display: inline-block
+        padding-left: 20px
+        padding-right: 25px
+        padding-bottom: 20px
+        padding-top: 20px
+        border-bottom: 2px solid $main_color
+
+.my-about__photo
+    margin-left: 55px
+    margin-top: 35px
+    margin-right: 25px
+    float: left
+
+.photo
+    width: 155px
+    height: 155px
+    border-radius: 50%
+    border: 5px solid $main_color
+    overflow: hidden
+
+    &__img 
+        width: 100%
+        height: 100%
+
+.my-about__description
+    float: left
+    margin-top: 30px
+
+.description__item
+    line-height: 13px
+    margin-bottom: 20px
+    color: $desc_color
+
+.description__title
+    display: inline-block
+    font-size: 17px
+    line-height: 13px
+    font-weight: bold
+    display: inline-block
+    vertical-align: top
+    margin-right: 10px
+
+.description__text
+    display: inline-block
+    vertical-align: top
+    width: 260px
+    font-size: 15px
+    line-height: 13px
+
+    &_width
+        width: 239px
+
+.my-skill
+    display: inline-block
+    vertical-align: top
+    width: 190px
+
+.my-skill__list
+    width: 100%
+    
+
+.my-skill__item
+    font-family: "proxime"
+    font-size: 15px
+    color: white
+    border-radius: 2px
+    overflow: hidden
+    display: inline-block
+    padding: 2px 5px
+    margin-bottom: 10px
+    vertical-align: top
+
+    background: rgba(59,168,192,1)
+    background: -moz-linear-gradient(top, rgba(59,168,192,1) 0%, rgba(59,168,192,1) 46%, rgba(46,141,162,1) 47%, rgba(46,141,162,1) 100%)
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(59,168,192,1)), color-stop(46%, rgba(59,168,192,1)), color-stop(47%, rgba(46,141,162,1)), color-stop(100%, rgba(46,141,162,1)))
+    background: -webkit-linear-gradient(top, rgba(59,168,192,1) 0%, rgba(59,168,192,1) 46%, rgba(46,141,162,1) 47%, rgba(46,141,162,1) 100%)
+    background: -o-linear-gradient(top, rgba(59,168,192,1) 0%, rgba(59,168,192,1) 46%, rgba(46,141,162,1) 47%, rgba(46,141,162,1) 100%)
+    background: -ms-linear-gradient(top, rgba(59,168,192,1) 0%, rgba(59,168,192,1) 46%, rgba(46,141,162,1) 47%, rgba(46,141,162,1) 100%)
+    background: linear-gradient(to bottom, rgba(59,168,192,1) 0%, rgba(59,168,192,1) 46%, rgba(46,141,162,1) 47%, rgba(46,141,162,1) 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ba8c0', endColorstr='#2e8da2', GradientType=0 )
+
+
+.education
+    margin-top: 25px
+    margin-left: 125px
+
+.education__item
+    position: relative
+    margin-bottom: 25px
+
+    &::before
+        content: ""
+        position: absolute
+        top: 50%
+        left: -80px
+        background: url(../img/sprite/education_sprite.png)
+
+    &_college::before
+        width: 41px
+        height: 23px
+        margin-top: -12px
+        background-position: -10px -10px
+
+    &_courses::before
+        width: 27px
+        height: 35px
+        margin-top: -17px
+        margin-left: 10px
+        background-position: -10px -51px
+
+
+    &:last-child
+        margin-bottom: 0px
+
+    .education__title
+        color: #4a545d
+        font-size: 17px
+        line-height: 13px
+        margin-bottom: 10px
+
+    .education__description
+        color: #4a545d
+        font-size: 15px
+        line-height: 13px
