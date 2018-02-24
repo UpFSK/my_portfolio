@@ -16,6 +16,7 @@ var gulp           = require('gulp'),
 
 // Пользовательские скрипты проекта
 
+/*
 gulp.task('common-js', function() {
 	return gulp.src([
 		'app/js/common.js',
@@ -25,10 +26,12 @@ gulp.task('common-js', function() {
 	.pipe(gulp.dest('app/js'));
 });
 
+
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/bootstrap-grid/bootstrap.min.js',
+		'app/libs/jquery.touchSwipe.min.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
@@ -36,6 +39,7 @@ gulp.task('js', ['common-js'], function() {
 	.pipe(gulp.dest('app/js'))
 	.pipe(browserSync.reload({stream: true}));
 });
+*/
 
 gulp.task('browser-sync', function() {
 	browserSync({
@@ -58,9 +62,9 @@ gulp.task('sass', function() {
 	.pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('watch', ['sass', 'js', 'browser-sync'], function() {
+gulp.task('watch', ['sass',/* 'js',*/ 'browser-sync'], function() {
 	gulp.watch('app/sass/**/*.sass', ['sass']);
-	gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
+	//gulp.watch(['libs/**/*.js', 'app/js/common.js'], ['js']);
 	gulp.watch('app/*.html', browserSync.reload);
 });
 

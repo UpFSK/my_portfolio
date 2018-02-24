@@ -2,6 +2,27 @@
     padding-top: 27px
     background: url(../img/border_header_and_footer.png) no-repeat center top, $bg_header_footer
     @extend %clearfix
+    position: relative
+
+.address_footer
+    display: none
+
+    @include tablets
+        position: absolute
+        top: -100px
+        display: block
+        font-size: 0px
+
+.address__list_footer
+    background: none
+    border-radius: 0px
+
+    @include tablets
+        width: 100%
+
+.address__item_footer
+    display: inline-block
+    width: 33% 
 
 
 .login

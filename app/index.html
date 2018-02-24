@@ -37,18 +37,33 @@
 				<div class="header__logo">
 					<img src="img/header_logo.png" alt="Logo" class="logo" title="logo">
 				</div>
-				<div class="header__social">
-					<ul class="social__list">
-						<li class="social__item">
-							<a href="https://vk.com/sashakislyakov" class="social__link social__link_vk">ВК</a>
-						</li>
-						<li class="social__item">
-							<a href="https://github.com/" class="social__link social__link_git">Git</a>
-						</li>
-					</ul>
+				<div class="header__right">
+					<div class="header__social">
+						<ul class="social__list">
+							<li class="social__item">
+								<a href="https://vk.com/sashakislyakov" class="social__link social__link_vk">ВК</a>
+							</li>
+							<li class="social__item">
+								<a href="https://github.com/" class="social__link social__link_git">Git</a>
+							</li>
+						</ul>
+					</div>
+					<div class="header__menu_tablets">
+						<a href="#" data-toggle=".container" id="sidebar-toggle" class="menu-btn">
+						</a>
+					</div>
 				</div>
 			</div>
 		</header>
+
+		<!--Slide-->
+		<div class="slid-menu">
+			<ul class="nav__list">
+				<li class="nav__item nav__item_active"><a href="#" class="nav__link">Обо мне</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">Мои работы</a></li>
+				<li class="nav__item"><a href="#" class="nav__link">Связаться со мной</a></li>
+			</ul>
+		</div>
 
 		<div class="container container-min">
 			<!--Aside-->
@@ -155,6 +170,15 @@
 
 	<!--Footer-->
 	<footer class="footer">
+
+			<address class="address address_footer">
+					<ul class="address__list address__list_footer">
+						<li class="address__item address__item_email address__item_footer"><a href="#" class="address__link address__link_email">kislyakov.2017@inobx.ru</a></li>
+						<li class="address__item address__item_tel address__item_footer"><a href="#" class="address__link address__link_tel">+79997309626</a></li>
+						<li class="address__item address__item_skype address__item_footer"><a href="#" class="address__link address__link_skype">kislyakov.2017@inobx.ru</a></li>
+					</ul>
+				</address>
+
 		<div class="container">
 			<div class="login">
 				<a href="" class="login__link">Вход/Выход</a>
@@ -165,7 +189,7 @@
 		</div>
 	</footer>
 
-	<script src="js/scripts.min.js"></script>
+	<script src="js/common.js"></script>
 
 </body>
 </html>
