@@ -13,6 +13,9 @@
         display: block
         font-size: 0px
 
+    @include phones
+        top: -250px
+
 .address__list_footer
     background: none
     border-radius: 0px
@@ -23,6 +26,11 @@
 .address__item_footer
     display: inline-block
     width: 33% 
+
+    @include phones
+        text-align: center
+        display: block
+        width: 100%
 
 
 .login
@@ -48,3 +56,13 @@
     line-height: 32px
     font-size: 13px
     
+
+.social_footer
+    display: none
+    @include phones
+        display: block
+        position: absolute
+        top: -70px
+        margin: 0
+        width: 100%
+        text-align: center

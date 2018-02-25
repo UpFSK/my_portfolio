@@ -12,7 +12,7 @@
 
 .header__logo
     float: left
-    margin-top: -15px
+    margin-top: -25px
 
 .header__right
     float: right
@@ -23,6 +23,9 @@
 
     @include tablets
         margin-right: 50px
+
+    @include phones
+        display: none
 
 .social__list
     font-size: 0  
@@ -64,6 +67,9 @@
         height: 21px
         //background: url(../img/menu_tablet.png)
         float: right
+
+        @include phones
+        margin-top: 2px
 
 .menu-btn
     @include tablets

@@ -8,9 +8,15 @@
     z-index: 999
     transition:  right 0.4s ease-in-out;
 
+    @include phones
+        width: 220px
+
 .opneSlid
     right: 0px
 
 
 .header_righ_openMenu
     margin-right: 240px
+
+    @include phones
+        margin-right: 220px

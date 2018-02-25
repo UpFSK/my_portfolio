@@ -1,6 +1,9 @@
 .container
     @include tablets
         width: 700px + 30px
+
+    @include phones
+        width: auto
     
 .container-min
     max-width: 960px + 30px
@@ -12,6 +15,9 @@
 
     @include tablets
         width: 700px + 30px
+
+    @include phones
+        width: auto
 
     
 .main 
@@ -39,6 +45,9 @@
     line-height: 20px
     color: $main_color
 
+    @include phones
+        text-align: center
+
     &__text
         display: inline-block
         padding-left: 20px
@@ -46,6 +55,9 @@
         padding-bottom: 20px
         padding-top: 20px
         border-bottom: 2px solid $main_color
+
+        @include phones
+            border: none
 
 .my-about__photo
     margin-left: 55px
@@ -64,6 +76,12 @@
         margin-left: 55px
         margin-top: 35px
         margin-right: 25px
+
+    @include phones
+        width: 100%
+        margin-left: 0px
+        margin-right: 0px
+        text-align: center
 
 .photo
     width: 155px
@@ -90,15 +108,24 @@
     @include tablets
         width: 415px
 
+    @include phones
+        width: 100%
+
     .description__list
         @include laptop
             display: inline-block
             text-align: left
 
+        @include phones
+            width: 100%
+
 .description__item
     line-height: 13px
     margin-bottom: 20px
     color: $desc_color
+
+    @include phones
+        text-align: center
 
     &:last-child
         margin-bottom: 0px
@@ -112,12 +139,20 @@
     vertical-align: top
     margin-right: 10px
 
+    @include phones
+        width: 100%
+        display: inline-block
+        margin-bottom: 10px
+
+    
+
 .description__text
     display: inline-block
     vertical-align: top
     width: 260px
     font-size: 15px
     line-height: 13px
+
 
     &_width
         width: 239px
@@ -156,9 +191,16 @@
     margin-top: 25px
     margin-left: 125px
 
+    @include phones
+        margin-left: 0px
+
 .education__item
     position: relative
     margin-bottom: 25px
+
+    @include phones
+            text-align: center
+            margin-top: 90px
 
     &::before
         content: ""
@@ -167,11 +209,18 @@
         left: -80px
         background: url(../img/sprite/education_sprite.png)
 
+        @include phones
+            top: -50px
+            left: 50%  
+
     &_college::before
         width: 41px
         height: 23px
         margin-top: -12px
         background-position: -10px -10px
+
+        @include phones
+            margin-left: -20px
 
     &_courses::before
         width: 27px
@@ -179,6 +228,9 @@
         margin-top: -17px
         margin-left: 10px
         background-position: -10px -51px
+
+        @include phones
+            margin-left: -13px
 
 
     &:last-child
@@ -189,6 +241,9 @@
         font-size: 17px
         line-height: 13px
         margin-bottom: 10px
+
+        @include phones
+            line-height: 20px
 
     .education__description
         color: #4a545d

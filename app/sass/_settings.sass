@@ -22,6 +22,12 @@ body
     height: $height-footer
     overflow: hidden
 
+    @include tablets
+        height: $height-footer + 100px
+
+    @include phones
+        height: $height-footer + 100px + 150px
+
 
 
 .main-content

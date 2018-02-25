@@ -23,5 +23,5 @@ let btnSlid = document.querySelector('.menu-btn'),
 
 btnSlid.addEventListener('click', () => {
 	slidMenu.classList.toggle('opneSlid');
-	header_right.classList.toggle('header_righ_openMenu')
-})
+	header_right.classList.toggle('header_righ_openMenu');
+});
